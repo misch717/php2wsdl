@@ -86,6 +86,7 @@ class PHPClass2WSDL
         }
 
         $this->uri = $uri;
+        $this->address = $address;
     }
 
     /**

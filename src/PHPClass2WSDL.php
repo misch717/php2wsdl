@@ -28,6 +28,13 @@ class PHPClass2WSDL
     protected $uri;
 
     /**
+     * The Address of the web service.
+     *
+     * @var string
+     */
+    protected $address;
+
+    /**
      * The URI to the stylesheet file.
      *
      * @var string
@@ -68,7 +75,7 @@ class PHPClass2WSDL
      * @param string $uri The web service URL.
      * @throws InvalidArgumentException If the class is not valid or not an object.
      */
-    public function __construct($class, $uri)
+    public function __construct($class, $uri, $address)
     {
         if (is_string($class) && class_exists($class)) {
             $this->class = $class;
@@ -149,7 +156,7 @@ class PHPClass2WSDL
         $this->wsdl->addService(
             $qNameClassName . 'Service', $qNameClassName . 'Port',
             'tns:' . $qNameClassName . 'Binding',
-            $this->uri
+            $this->address
         );
     }
 

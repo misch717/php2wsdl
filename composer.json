@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PHP22WSDL\\": "src"
+      "PHP2WSDL\\": "src"
     }
   },
   "autoload-dev": {

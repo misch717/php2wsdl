@@ -1,5 +1,5 @@
 {
-  "name": "misch717/phptowsdl",
+  "name": "misch717/php2wsdl",
   "description": "Create WSDL files from PHP classes.",
   "type": "library",
   "keywords": [
@@ -28,12 +28,12 @@
   },
   "autoload": {
     "psr-4": {
-      "PHPTO2WSDL\\": "src"
+      "PHP22WSDL\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PHPTOWSDL\\Test\\": "tests"
+      "PHP2WSDL\\Test\\": "tests"
     }
   }
 }

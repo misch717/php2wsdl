@@ -14,7 +14,7 @@ Create WSDL files from PHP classes.
 Via Composer
 
 ``` bash
-$ composer require php2wsdl/php2wsdl
+$ composer require misch717/php2wsdl
 ```
 
 ## Usage

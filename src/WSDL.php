@@ -590,11 +590,9 @@ class WSDL
      */
     public static function typeToQName($type)
     {
-        if ($type[0] === '\\') {
-            $type = substr($type, 1);
-        }
+        $qname = explode('\\', $type);
 
-        return str_replace('\\', '.', $type);
+        return array_pop($qname);
     }
 
     /**
